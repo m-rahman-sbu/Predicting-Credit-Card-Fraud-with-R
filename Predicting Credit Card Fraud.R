@@ -25,7 +25,7 @@ prop.table(summary(creditcard$class)) # % of fraudulent and normal transactions
 hist(creditcard[,1:30]) #supposed to work, but not working 
 corrplot(cor(creditcard[,1:30]))
 
-### Task 3: Split the Data into Training and Test Sets
+### Task 3: Split the Data into Train and Test Sets
 
 set.seed(1337)
 train <- createDataPartition(creditcard$class,
